@@ -1,0 +1,407 @@
+/*GERAL*/
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color:#4d4d4d;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+/*NAVEGAÇÃO*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+}
+
+nav ul li a:hover {
+    color: #ffd504;
+    border-bottom: 1px transparent #ffd504;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+/*CABEÇALHO*/
+
+header {
+    background-image: url(../imagens/img-topo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ffd504;
+}
+
+header h1::after {
+    content:"";
+    width: 140px;
+    height: 4px;
+    background: currentColor;
+    display: block;
+    margin: 10px auto;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+/*SOBRE*/
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+    background-color: #ffffff;
+    color: #4d4d4d;
+}
+
+#sobre p {
+    margin-bottom: 1em;
+    max-width: 1000px;
+}
+
+#sobre .botao {
+    color: #333232;
+    background-color: #ffd504;
+    padding: 10px 30px;
+    border-radius: 3px;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: .9em;
+    text-decoration: none;   
+}
+
+#sobre .botao:hover {
+    background-color: #333232;
+    color: #ffd504;
+}
+
+#sobre div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/*SERVIÇOS*/
+
+#servicos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333232;
+    color: #ffffff;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#servicos h3 {
+    color: #ffd504;
+}
+
+/*PORTFOLIO*/
+
+/*#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}*/
+
+#portfolio{
+    padding-top:20px;
+}
+
+#portfolio h2 {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#Portfolio .grid-portfolio {
+    position: relative;
+}
+
+#Portfolio .grid-portfolio a {
+    display: block;
+    position: relative;
+}
+
+#portfolio img {
+    width: 100%;
+    opacity: 1;
+}
+
+#portfolio .descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    top:0;
+    background: rgba(51, 50, 50, .9);
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: #ffd504;
+    transition: all .35s;
+}
+
+#portfolio .descricao:hover{
+    opacity:1;
+}
+
+.filters-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: #ffd504;
+    color: #333232;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: .9em;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
+button:hover {
+    background-color: #333232;
+    color: #ffd504;
+}
+
+button a {
+    text-decoration: none;
+    color: #333232;
+}
+
+/*CONTATO*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333232;
+    color: #ffffff;
+    text-align:justify;
+}
+
+#contato div {
+    margin-top: 10px;
+}
+
+#contato a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#contato a:hover {
+    color: #ffd504;
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #4d4d4d;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px) {
+    
+    /*
+    NAVEGAÇAO
+    */
+    
+    nav {
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    
+    /*
+    CABEÇALHO
+    */
+    
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    /*
+    SOBRE
+    */
+    
+    #sobre {
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+  }
+    
+    #sobre .descricao {
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%;
+   }
+    
+    #sobre p {
+        margin: 10px 10px 10px 0;
+    }
+    
+    #sobre h2 {
+        width: 100%;
+        text-align: left;
+    }
+    
+      /*
+    SERVIÇOS
+    */
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #servicos p {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 200px;
+        margin: 30px;
+    }
+      /*
+    PORTFOLIO
+    */
+    
+    #portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #portfolio h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #portfolio .grid-portfolio a{
+	   display: block;
+	   position: relative;
+	   width: 33.3333333333%;
+    }
+    
+    #portfolio img {
+        width: 100%;
+        opacity: 1;
+    }
+    
+    #portfolio .descricao {
+        height: 100%;
+    }
+    
+    .filters-options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+       /*
+    CONTATO
+    */
+    
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    #contato .icone-contato {
+        margin: 5px;
+    }
+    
+    #contato h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #contato p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
