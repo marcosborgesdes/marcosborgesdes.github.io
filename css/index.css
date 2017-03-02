@@ -173,6 +173,7 @@ header p {
 #portfolio .grid-portfolio a {
     display: block;
     position: relative;
+    width: 100%;
 }
 
 #portfolio img {
