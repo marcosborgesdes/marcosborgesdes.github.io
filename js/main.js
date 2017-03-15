@@ -4,7 +4,7 @@ $(document).ready(function(){
             padding : 0,
             openEffect  : 'elastic',
             closeBtn: true,
-            fitToView: true
+            fitToView: false
       });
 	
 	 $(".scroll").click(function(event){        
