@@ -1,11 +1,20 @@
 $(document).ready(function(){
 	
+<<<<<<< HEAD
 	//$('.fancybox').fancybox({
            // padding : 0,
            // openEffect  : 'elastic',
           //  closeBtn: true,
           //  fitToView: true
      // });
+=======
+	$('.fancybox').fancybox({
+            padding : 0,
+            openEffect  : 'elastic',
+            closeBtn: true,
+            fitToView: false
+      });
+>>>>>>> origin/master
 	
 	 $(".scroll").click(function(event){        
         event.preventDefault();
