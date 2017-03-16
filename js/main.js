@@ -1,11 +1,11 @@
 $(document).ready(function(){
 	
-	$('.fancybox').fancybox({
-            padding : 0,
-            openEffect  : 'elastic',
-            closeBtn: true,
-            fitToView: true
-      });
+	//$('.fancybox').fancybox({
+           // padding : 0,
+           // openEffect  : 'elastic',
+          //  closeBtn: true,
+          //  fitToView: true
+     // });
 	
 	 $(".scroll").click(function(event){        
         event.preventDefault();
